@@ -1,0 +1,23 @@
+{
+  "name": "oportuniza-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend da plataforma Oportuniza",
+  "scripts": {
+    "db:init": "node scripts/init-db.js",
+    "db:check": "node scripts/check-db.js",
+    "admin:create": "node scripts/create-admin.js",
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.12.0"
+  }
+}
